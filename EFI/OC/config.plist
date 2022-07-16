@@ -102,6 +102,14 @@
 				<key>Path</key>
 				<string>SSDT-NVME-Disable.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-ALC298.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ALC298.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -481,7 +489,7 @@
 			<key>PciRoot(0x0)/Pci(0x1F,3x0)</key>
 			<dict>
 				<key>alc-delay</key>
-				<integer>1500</integer>
+				<integer>1000</integer>
 				<key>alctcsel</key>
 				<data>AQAAAA==</data>
 				<key>hda-gfx</key>
@@ -1689,7 +1697,7 @@
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
 				<key>UIScale</key>
-				<data>Ag==</data>
+				<data>AQ==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
@@ -1699,11 +1707,11 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
+				<data>IA==</data>
 				<key>boot-args</key>
 				<string>-igfxtypec</string>
 				<key>csr-active-config</key>
-				<data>5wMAAA==</data>
+				<data>AAAAAA==</data>
 				<key>run-efi-updater</key>
 				<integer>0</integer>
 			</dict>
@@ -1758,7 +1766,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,1</string>
+			<string></string>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
@@ -1824,7 +1832,7 @@
 			<key>AudioOutMask</key>
 			<integer>-1</integer>
 			<key>AudioSupport</key>
-			<false/>
+			<true/>
 			<key>DisconnectHda</key>
 			<false/>
 			<key>MaximumGain</key>
@@ -1838,7 +1846,7 @@
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
-			<integer>0</integer>
+			<integer>3000</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -1873,6 +1881,16 @@
 				<true/>
 				<key>Path</key>
 				<string>OpenHfsPlus.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>AudioDxe.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>AudioDxe.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
